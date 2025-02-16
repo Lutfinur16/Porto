@@ -1,0 +1,1058 @@
+*, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  background-color: #2C2F3F ;
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+}
+
+section {
+  padding: 1.25rem 1rem;
+  scroll-margin-top: 48px
+}
+
+body h1 {
+  font-size: 1.25rem;
+}
+
+body h2 {
+  font-size: 1.125rem;
+}
+
+body h3 {
+  font-size: 1rem;
+}
+
+body h4 {
+  font-size: 0.875rem ;
+}
+
+body h5 {
+  font-size: 0.75rem;
+}
+
+body p {
+  line-height: 1.25rem;
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+/* --------------------------------------------------Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #2C2F3F;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
+  padding: 0.625rem 1rem;
+}
+
+nav.active {
+  background-color: #262836;
+}
+
+.nav-links {
+  flex-direction: column;
+  position: absolute;
+  padding: 1.25rem 1rem;
+  top: 100%;
+  right: 0;
+  background-color: #262836;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav-links.active {
+  display: flex;
+  gap: 1rem;
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #28A745 ;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.icon-hamburger {
+  cursor: pointer;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.icon-hamburger-img {
+  width: 1.5rem;
+  padding: 0.125rem;
+  transition: transform 0.3s ease;
+}
+
+.icon-hamburger.close .icon-hamburger-img {
+  transform: rotate(90deg);
+}
+
+ 
+/* --------------------------------------------------Hero section */
+.hero-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0.625rem;
+}
+
+.hero-content-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 0.625rem 0;
+  width: 100%;
+}
+
+.hero-hello h3 {
+  font-family: "Roboto Mono", serif;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.hero-name h1 {
+  font-family: "Roboto Mono", serif;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.hero-skills {
+  text-align: center;
+  color: #fff;
+}
+
+.hero-skills h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem;
+  width: 100%;
+  gap: 5%;
+}
+
+.hero-btn-download {
+  padding: 0.5rem 0.75rem;
+  background-color: #E53935 ;
+  border: none;
+  border-radius: 1.25rem;
+}
+
+.hero-btn-download h5 {
+  font-weight: 400;
+  color: #fff;
+}
+
+.hero-btn-download-linkedin {
+  background-color: transparent;
+  border: none ;
+  padding: 0.25rem;
+}
+
+.hero-btn-download-linkedin img {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+
+.hero-btn-download-mail {
+  background-color: transparent;
+  border: none ;
+  padding: 0.25rem;
+}
+
+.hero-btn-download-mail img {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+
+.hero-content-image {
+  display: flex;
+  justify-content: center;
+  flex-basis: auto;
+  padding: 0.625rem;
+}
+
+.hero-content-image img {
+  width: 7.5rem;
+}
+
+/* --------------------------------------------------About section */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+  color: #fff;
+}
+
+.about-me-content p {
+  text-align: center;
+}
+
+.quote-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  color: #fff;
+}
+
+.quote-content h4 {
+  text-align: center;
+  font-weight:400 ;
+  line-height: 1.75rem;
+}
+
+.technologies-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem  ;
+  color: #fff;
+}
+
+.technologies-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625rem 0;
+  width: 100%;
+}
+
+.technologies-icon-container {
+  padding: 0.25rem;
+  width: 20%;
+}
+
+.technologies-icon-container img {
+  width: 100%;
+  display: block; 
+}
+
+
+/* --------------------------------------------------Services section */
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-header-container {
+  padding: 1.25rem 1rem;
+}
+
+.services-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem ;
+  color: #fff;
+}
+
+.services-header-content h1 {
+  text-align: center;
+}
+
+.services-header-content p {
+  text-align: center;
+}
+
+.services-list-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.25rem;
+  justify-items: center;
+  padding: 0.625rem;
+}
+
+.services-list-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.625rem;
+  padding: 1.25rem 0.75rem;
+  color: #fff;
+  background-color: rgb(37, 37, 37);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+
+/* -----------------------------Animation */
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.services-list-card::after, .services-list-card::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 0.5rem;
+  animation: 2s spin linear infinite;
+}
+
+.services-list-card::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+}
+/* -----------------------------Animation-end */
+
+/* --------------------------------------------------Project section */
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.project-header-container {
+  padding: 1.25rem 1rem;
+}
+
+.project-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem ;
+  color: #fff;
+  text-align: center;
+}
+
+.project-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.project-card {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #282B38;
+  border-radius: 0.625rem;
+  padding: 1.25rem 0.375rem;
+  width: 100%;
+}
+
+.project-card-icon {
+  padding: 0.375rem ;
+}
+
+.project-card-icon img {
+  width: 3rem;
+  display: block;
+}
+
+.project-card h4 {
+  font-weight: 500;
+}
+
+.project-card p {
+  display: none;
+}
+
+.project-card button {
+  background-color: #007BFF;
+  border: none;
+  border-radius: 0.625rem;
+  padding: 0.375rem 1rem;
+  color: #F8F9FA;
+  font-weight: 400;
+  width: auto;
+}
+
+/* --------------------------------------------------Contact section */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  color: #fff;
+}
+
+.contact-image-content img {
+  width: 10rem;
+}
+
+.contact-header h4 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.contact-socmed-container {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.contact-socmed-container button {
+  background-color: transparent;
+  border: none ;
+  padding: 0.25rem;
+}
+
+.contact-socmed-container img {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+
+.contact-mail-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-mail-content {
+  padding: 0.5rem 0.75rem;
+  background-color: #007BFF ;
+  border: none;
+  border-radius: 1.25rem;
+  color: #fff;
+}
+
+.contact-mail-content h5{
+  font-weight: 400;
+}
+
+.contact-download-content {
+  padding: 0.5rem 0.75rem;
+  background-color: #E53935 ;
+  border: none;
+  border-radius: 1.25rem;
+  color: #fff;
+}
+
+.contact-download-content h5{
+  font-weight: 400;
+}
+
+/* --------------------------------------------------Footer */
+footer {
+  text-align: center;
+  padding: 1.25rem 0;
+  color: #fff;
+}
+
+
+
+/* ------------------------------------------------Responsive Tablet*/
+/* ---------------------------------------------------------------- */
+@media screen and (min-width: 768px){
+  section {
+    padding: 1.875rem 1.5rem;
+  }
+
+  body h1 {
+    font-size: 1.25rem;
+  }
+  
+  body h2 {
+    font-size: 1.5rem;
+  }
+  
+  body h3 {
+    font-size: 1.25rem;
+  }
+  
+  body h4 {
+    font-size: 1.125rem;
+  }
+  
+  body h5 {
+    font-size: 1rem;
+  }
+
+  body p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+
+  /* --------------------------------------------------Navbar */
+nav {
+  padding: 1.25rem 1.5rem;
+}
+
+.icon-hamburger img {
+  width: 2rem;
+  padding: 0.25rem;
+}
+
+/* --------------------------------------------------Hero section */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-content-text {
+  gap: 0.625rem;
+}
+
+.hero-hello h3 {
+  font-size: 2.5rem;
+}
+
+.hero-name h1 {
+  font-size: 3rem;
+}
+
+.hero-skills h3 {
+  font-size: 1.75rem;
+}
+
+.hero-btn {
+  gap: 1.25rem;
+}
+
+.hero-btn-download {
+  padding: 1rem 1.5rem;
+  border-radius: 1.45rem;
+}
+
+.hero-btn-download-linkedin img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.hero-btn-download-mail {
+  padding: 0.25rem;
+}
+
+.hero-btn-download-mail img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.hero-content-image {
+  padding: 0 1.25rem;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+}
+
+.hero-content-image img {
+  width: 18.75rem
+}
+
+/* --------------------------------------------------About section */
+.about-container {
+  gap: 1.875rem;
+}
+
+.about-me-content {
+  gap: 1.25rem;
+}
+
+.quote-content {
+  gap: 1.875rem;
+}
+
+.quote-content h4 {
+  line-height: 1.75rem;
+}
+
+.technologies-container {
+  gap: 1.25rem;
+}
+
+.technologies-content {
+  padding: 0.625rem 0.25rem;
+}
+
+.technologies-icon-container {
+  padding: 0.25rem;
+}
+
+.technologies-icon-container img {
+  width: 3rem;
+}
+
+/* --------------------------------------------------Services section */
+.services-list-container {
+  grid-template-columns: repeat(1fr);
+  gap: 1.875rem;
+  justify-content: center;
+}
+
+.services-list-card {
+  gap: 0.625rem;
+  padding: 1.25rem 0.625rem;
+  border-radius: 0.5rem;
+  width: 75%;
+}
+
+/* --------------------------------------------------Project section */
+
+.project-container {
+  gap: 0.625rem;
+}
+
+.project-header-container {
+  padding: 1.25rem 1rem;
+}
+
+.project-header-content {
+  gap: 0.625rem ;
+}
+
+.project-card-container {
+  grid-template-columns: repeat(auto-fit, 20rem);
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.project-card {
+  gap: 1.25rem;
+  border-radius: 0.625rem;
+  padding: 1.875rem 0.375rem;
+}
+
+.project-card-icon {
+  padding: 0.375rem ;
+}
+
+.project-card-icon img {
+  width: 4rem;
+}
+
+.project-card button {
+  border-radius: 0.625rem;
+  padding: 0.375rem 1rem;
+}
+
+/* --------------------------------------------------Contact section */
+.contact-container {
+  gap:  2.5rem;
+}
+
+.contact-image-content img {
+  width: 20rem;
+}
+
+.contact-socmed-container {
+  gap: 1.25rem;
+}
+
+.contact-socmed-container button {
+  padding: 0.25rem;
+}
+
+.contact-socmed-container img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.contact-mail-container {
+  gap: 1.25rem;
+}
+
+.contact-mail-content {
+  padding: 1rem 1.5rem;
+  border-radius: 1.25rem;
+}
+
+.contact-download-content {
+  padding: 1rem 1.5rem;
+  border-radius: 1.25rem;
+}
+
+/* --------------------------------------------------Footer */
+footer {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  color: #fff;
+}
+}
+
+
+
+/* ------------------------------------------------Responsive Desktop*/
+/* ---------------------------------------------------------------- */
+@media screen and (min-width: 1024px){
+  section {
+    padding: 3.75rem 9.75rem;
+  }
+
+  body h1 {
+    font-size: 2rem;
+  }
+  
+  body h2 {
+    font-size: 1.625rem;
+  }
+  
+  body h3 {
+    font-size: 1.5rem;
+  }
+  
+  body h4 {
+    font-size: 1.25rem;
+  }
+  
+  body h5 {
+    font-size: 1.125rem;
+  }
+
+  body p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+  }
+
+  /* --------------------------------------------------Navbar */
+  nav {
+    justify-content: center;
+    padding: 1.25rem 0;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: static;
+    background-color: #2C2F3F;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    justify-content: space-evenly;
+  }
+
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #28A745 ;
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 0.625rem 0.95rem;
+  }
+  
+  .nav-links a.active {
+    background-color: #28A745;
+    color: white;
+    border-radius: 2rem;
+    padding: 0.625rem 0.95rem;
+    transition: background-color 0.4s ease, color 0.2s ease;
+  }
+
+.icon-hamburger img {
+  display: none;
+}
+
+/* --------------------------------------------------Hero section */
+.hero-container {
+  display: flex;
+}
+
+.hero-content-text {
+  gap: 0.625rem;
+}
+
+.hero-hello h3 {
+  font-size: 1.875rem;
+}
+
+.hero-name h1 {
+  font-size: 3rem;
+}
+
+.hero-skills h3 {
+  font-size: 1.875rem;
+}
+
+.hero-btn {
+  gap: 0.625rem;
+  gap: 1.25rem;
+}
+
+.hero-btn-download {
+  padding: 1rem 1.25rem;
+  border-radius: 1.875rem;
+  cursor: pointer;
+}
+
+.hero-btn-download-linkedin {
+  cursor: pointer;
+}
+
+.hero-btn-download-linkedin img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.hero-btn-download-mail {
+  cursor: pointer;
+}
+
+.hero-btn-download-mail {
+  padding: 0.25rem;
+}
+
+.hero-btn-download-mail img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.hero-content-image {
+  padding: 0.625rem;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+}
+
+.hero-content-image img {
+  width: 18.75rem;
+}
+
+
+
+/* --------------------------------------------------About section */
+.about-container {
+  gap: 1.875rem;
+}
+
+.about-me-content {
+  gap: 1.25rem;
+}
+
+.quote-content {
+  gap: 1.875rem;
+}
+
+.quote-content h4 {
+  line-height: 1.75rem;
+}
+
+.technologies-container {
+  gap: 1.25rem;
+}
+
+.technologies-content {
+  padding: 0.625rem 0.25rem;
+}
+
+.technologies-icon-container {
+  padding: 0.25rem;
+}
+
+.technologies-icon-container img {
+  width: 3rem;
+}
+
+/* --------------------------------------------------Services section */
+.services-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem ;
+  padding: 0.625rem 0;
+}
+
+.services-list-card {
+  gap: 1.25rem;
+  padding: 2.5rem 0.875rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+/* --------------------------------------------------Project section */
+
+.project-container {
+  gap: 0.625rem;
+}
+
+.project-header-container {
+  padding: 1.25rem 1rem;
+}
+
+.project-header-content {
+  gap: 0.625rem ;
+}
+
+
+.project-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20.25rem);
+  gap: 1.25rem;
+  justify-content: center;
+  justify-items: center;
+  padding: 0.625rem 0;
+}
+
+.project-card {
+  gap: 1.25rem;
+  padding: 1.875rem 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+}
+
+.project-card-icon {
+  padding: 0.375rem ;
+}
+
+.project-card-icon img {
+  width: 4rem;
+}
+
+.project-card button {
+  border-radius: 0.625rem;
+  padding: 0.375rem 1rem;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.project-card button:hover {
+  box-shadow: 0 0 20px 2px #F9FCFF;
+  background-color: #007BFF;
+  transform: scale(1.05); 
+  font-weight: 600;
+}
+
+/* --------------------------------------------------Contact section */
+.contact-container {
+  gap:  2.5rem;
+}
+
+.contact-image-content img {
+  width: 18.75rem;
+  height: 18.75rem;
+}
+
+.contact-socmed-container {
+  gap: 1.25rem;
+}
+
+.contact-socmed-container button {
+  padding: 0.25rem;
+}
+
+.contact-socmed-container img {
+  width: 3rem;
+  height: 3rem;
+}
+
+#social-media-instagram {
+  cursor: pointer;
+}
+
+#social-media-fb{
+  cursor: pointer;
+}
+
+#social-media-twitter {
+  cursor: pointer;
+}
+
+#social-media-linkedin {
+  cursor: pointer;
+}
+
+.contact-mail-container {
+  gap: 1.25rem;
+}
+
+.contact-mail-content {
+  padding: 1rem 1.25rem;
+  border-radius: 1.875rem;
+  cursor: pointer;
+}
+
+.contact-download-content {
+  padding: 1rem 1.25rem;
+  border-radius: 1.875rem;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------Footer */
+footer {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  color: #fff;
+}
+}
