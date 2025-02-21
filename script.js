@@ -39,3 +39,9 @@ hamburger.addEventListener('click', () => {
   const imgSrc = hamburger.classList.contains('close') ? 'Image/close.png' : 'Image/hamburger.png';
   hamburger.querySelector('.icon-hamburger-img').src = imgSrc;
 });
+
+
+// button di project card 
+document.getElementById('btn-mobile-booking-app').addEventListener("click", function() {
+  window.location.href = "https://medium.com/@lutfinurwir/case-study-solusi-produk-digital-untuk-perantauan-dalam-mencari-hunian-tempat-tinngal-sementara-5178060c9648";
+});
